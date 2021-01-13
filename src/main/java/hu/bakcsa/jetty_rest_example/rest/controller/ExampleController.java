@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 @Path("")
 public class ExampleController {
 
-    // http://localhost:8090/rest/John
+    // http://localhost:8090/rest/
     @GET()
     @Produces(MediaType.TEXT_PLAIN)
     public String greetings() {
@@ -38,8 +38,6 @@ public class ExampleController {
     }
 
     //Setting specific response status
-    //Response
-
     // http://localhost:8090/rest/getobj-with-status
     @GET()
     @Path("getobj-with-status")
